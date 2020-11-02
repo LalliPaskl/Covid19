@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Sending</title>
+</head>
+<body>
+<h3>Email Sending</h3>
+<form  method="post" action="{% url 'supemailsending' %}">
+    {% csrf_token %}
+    <textarea name="message" placeholder="message"></textarea>
+    <textarea name="email" placeholder="email"></textarea>
+
+    <input type="submit"/>
+</form>
+
+
+</body>
+</html>

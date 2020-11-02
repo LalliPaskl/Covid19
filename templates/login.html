@@ -1,0 +1,146 @@
+<html xmlns="http://www.w3.org/1999/html">
+   <head>
+     <title>Login form</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <link rel="next" href="reg.html">
+
+
+
+   </head>
+    <body style="background-color: dodgerblue">
+    <div class="mainTitle" style="text-align: center; font-size: 50px; font-family:'Adobe Gothic Std B';">Long life Pharmacy</div>
+        <div class="container">
+            <div class="row">
+{#                <div class="col-md-offset-1 col-md-5">#}
+{#                    <form method="post">#}
+{#                        <div class="title"> Register here </div>#}
+{#                        {% csrf_token %}#}
+{#                        {{ rform.as_p }}<br>#}
+{##}
+{#                        <input type="submit" value="Submit" class="btn btn-primary">#}
+{#                        <input type="reset" value="Clear" class="btn btn-primary">#}
+{#                    </form>#}
+{#                </div>#}
+                <div class="col-md-offset-1 col-md-4">
+                    <form method="post">
+                        <div class="title" style="text-align: center"> Login here </div><br>
+                        {% csrf_token %}
+                        {{ lform.as_p }}<br>
+                        <input type="submit" value="Login" class="btn btn-primary mybtn">
+{#                        getting login form to the middle#}
+                        <div class="linkClass">
+                            <p style="color: #E6E6E6"><a href="/forgot/">Forgot Password </a></p>
+                            <a href="/regview/">Sign Up </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{#<html>#}
+{#    <head>#}
+{#        <title>Registration form</title>#}
+{#        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">#}
+{#        <link rel="stylesheet" href="static/css/base.css">#}
+{#        <link rel="stylesheet" href="static/css/home.css">#}
+{#        <style>#}
+{#            body {#}
+{#                background-color: grey;#}
+{#                width: 100%;#}
+{#                color: #000;#}
+{#            }#}
+{#            .title {#}
+{#                margin: 5px auto 30px;#}
+{#                font-size: 25px;#}
+{#                text-align: center;#}
+{#                text-decoration: underline;#}
+{#                font-weight: bold;#}
+{#                color: #000;#}
+{#                background-color: #D16F00;#}
+{#                padding: 5px;#}
+{#                border-radius: 5px;#}
+{#            }#}
+{#            input[type=text], input[type=email], input[type=password],input[type=number] {#}
+{#                background-color: #E6E6E6;#}
+{#                padding: 6px;#}
+{#                font-size: small;#}
+{#                color: #574B4B;#}
+{#                font-weight: bold;#}
+{#            }#}
+{#            input[type=submit] {#}
+{#                padding: 5px 25px;#}
+{#                font-size: small;#}
+{#                color: lightgrey;#}
+{#                margin-left: 70px;#}
+{#            }#}
+{#            input[type=reset] {#}
+{#                padding: 5px 25px;#}
+{#                font-size: small;#}
+{#                color: lightgrey;#}
+{#                margin-left: 50px;#}
+{#            }#}
+{#            li {#}
+{#                list-style: none;#}
+{#                display: inline-block;#}
+{#                margin-right: 30px;#}
+{#            }#}
+{#            form {#}
+{#                border: 2px solid lightgrey;#}
+{#                padding: 20px;#}
+{#                border-radius: 5px;#}
+{#            }#}
+{#            .linkClass a {#}
+{#                color: #000;#}
+{#                font-size: 15px;#}
+{#                margin: 0px 20px 10px 200px;#}
+{#            }#}
+{#            .mybtn {#}
+{#                color: #000;#}
+{#                background-color: #fff;#}
+{#                position: relative;#}
+{#                left: 40px;#}
+{#                bottom: 10px;#}
+{#            }#}
+{#            .mainTitle {#}
+{#                font-size: 40px;#}
+{#                font-family: "Bauhaus 93";#}
+{#                color: #000;#}
+{#                padding: 10px;#}
+{#                text-align: center;#}
+{#                border-bottom: 2px solid white;#}
+{#                margin-bottom: 50px;#}
+{#            }#}
+{#        </style>#}
+{#    </head>#}
+{#    <body>#}
+{#    <div class="mainTitle">CUSTOMER SERVICES</div>#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-md-offset-1 col-md-5">#}
+{#                    <form method="post">#}
+{#                        <div class="title"> Register here </div>#}
+{#                        {% csrf_token %}#}
+{#                        {{ rform.as_p }}<br>#}
+{##}
+{#                        <input type="submit" value="Submit" class="btn btn-primary">#}
+{#                        <input type="reset" value="Clear" class="btn btn-primary">#}
+{#                    </form>#}
+{#                </div>#}
+{#                <div class="col-md-offset-1 col-md-4">#}
+{#                    <form method="post">#}
+{#                        <div class="title"> Login here </div>#}
+{#                        {% csrf_token %}#}
+{#                        {{ lform.as_p }}<br>#}
+{#                        <input type="submit" value="Login" class="btn btn-primary mybtn">#}
+{#                        <div class="linkClass">#}
+{#                            <a href="/forgot/">Forgot Password </a>#}
+{#                        </div>#}
+{#                    </form>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </body>#}
+{#</html>#}

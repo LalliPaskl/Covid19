@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/html">
+   <head>
+     <title>supplier storage</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+
+
+
+   </head>
+    <body style="background-color: dodgerblue">
+    <div class="mainTitle" style="text-align: center; font-size: 50px; font-family:'Adobe Gothic Std B';">Long life Pharmacy</div>
+
+              {% if suptablets %}
+        <div id="wrapper">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1 aria-multiselectable="true" contenteditable="true">
+
+{#        <table class="table table-striped table-bordered table-lg" aria-multiselectable="true" width=" 300px" border="[(ngModel)]" data-offset="200px" cellpadding="10px">#}
+        <thead class="thead-dark">
+
+            <tr id="row1">
+
+                <th>tabletname</th>
+                <th>brandname</th>
+                <th>components</th>
+                <th>price</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+
+        {% for i in suptablets %}
+            <tr>
+                    <td>{{ i.tabletname }}</td>
+                    <td>{{ i.brandname }}</td>
+                    <td>{{ i.components}}</td>
+                    <td>{{ i.price }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+
+        </table>
+
+    {%  endif %}
+    </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/html">
+   <head>
+     <title>supplier storage</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+
+
+
+   </head>
+    <body style="background-color: dodgerblue">
+    <div class="mainTitle" style="text-align: center; font-size: 50px; font-family:'Adobe Gothic Std B';">Long life Pharmacy</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-5">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="title" style="text-align: center"> supplier storage</div><br>
+                        {% csrf_token %}
+                        {{ sform.as_p }}<br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                        <input type="reset" value="Clear" class="btn btn-primary">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
